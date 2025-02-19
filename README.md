@@ -61,7 +61,7 @@ Libraries extend the abilities of Python. Some libraries are included by default
 ## Regex Patterns
 ### MetaCharacters
 - **.   any character except a new line**
-- ***   0 or more repetitions**
+- **(*)   0 or more repetitions**
 - **+   1 or more repetitions**
 - **?   0 or 1 repetition**
 
