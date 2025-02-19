@@ -26,8 +26,8 @@ This repository contains my solutions and notes for the CS50 Python course. I am
 - Regular Expressions
 
 ## How to Use
-1. Clone the repository:
-`[Github Repo Link](https://github.com/ujjwalbasnyat/codespace)
+### Clone the repository
+[Github Repo Link](https://github.com/ujjwalbasnyat/codespace)
 
 ## Resources
 - [CS50's Introduction to Programming with Python](https://cs50.harvard.edu/python/)
