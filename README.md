@@ -1,9 +1,9 @@
-#CS50 Python Practice Repository
+# CS50 Python Practice Repository
 
-#Description
+# Description
 This repository contains my solutions and notes for the CS50 Python course. I am using this space to practice coding, experiment with different approaches, and document my learning journey.
 
-#Table of Contents
+# Table of Contents
 - Functions, Variables
 - Conditionals
 - Loops
@@ -15,7 +15,7 @@ This repository contains my solutions and notes for the CS50 Python course. I am
 - Object Oriented Programming
 - Et Cetera
 
-##Course topic covered
+## Course topic covered
 - Functions, Variables
 - Conditionals
 - Loops
@@ -25,7 +25,7 @@ This repository contains my solutions and notes for the CS50 Python course. I am
 - File I/O
 - Regular Expressions
 
-##How to Use
+## How to Use
 1. Clone the repository:
 `[Github Repo Link](https://github.com/ujjwalbasnyat/codespace)
 
