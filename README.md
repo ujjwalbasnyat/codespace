@@ -1,9 +1,9 @@
 # CS50 Python Practice Repository
 
-# Description
+## Description
 This repository contains my solutions and notes for the CS50 Python course. I am using this space to practice coding, experiment with different approaches, and document my learning journey.
 
-# Table of Contents
+## Table of Contents
 - Functions, Variables
 - Conditionals
 - Loops
@@ -26,8 +26,8 @@ This repository contains my solutions and notes for the CS50 Python course. I am
 - Regular Expressions
 
 ## How to Use
-### Clone the repository
-[Github Repo Link](https://github.com/ujjwalbasnyat/codespace)
+### Clone the repository for Github Repository
+[Repository](https://github.com/ujjwalbasnyat/codespace)
 
 ## Resources
 - [CS50's Introduction to Programming with Python](https://cs50.harvard.edu/python/)
@@ -38,8 +38,6 @@ Feel free to fork this repository and submit pull requests if you find better so
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-
 
 
 
@@ -57,3 +55,41 @@ Libraries extend the abilities of Python. Some libraries are included by default
 - **Packages**
 - **APIs**
 - **Making Your Own Libraries**
+
+# Regular expressions (Regex)
+
+## Regex Patterns
+### MetaCharacters
+- **.   any character except a new line**
+- ***   0 or more repetitions**
+- **+   1 or more repetitions**
+- **?   0 or 1 repetition**
+
+### Quantifiers
+- **{m} m repetitions**
+- **{m,n} m-n repetitions**
+
+### Anchors
+- **^   matches the start of the string**
+- **$   matches the end of the string or just before the newline at the end of the string**
+
+### Character set and Character Classes
+- **[]    set of characters**
+- **[^]   complementing the set**
+
+### PreDefined Character classes
+- **\d    decimal digit**
+- **\D    not a decimal digit**
+- **\s    whitespace characters**
+- **\S    not a whitespace character**
+- **\w    word character, as well as numbers and the underscore**
+- **\W    not a word character**
+
+### Alternation
+- **A|B     either A or B**
+
+### Grouping Constructs
+- **(...)   a group**
+- **(?:...) non-capturing version**
+
+
