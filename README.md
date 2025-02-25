@@ -145,3 +145,25 @@ s1 = Student("David")
 s1.Welcome()
 ```
 
+## Static Methods
+
+### Decorator
+
+# Features of OOPS
+
+**1. Encapsulation**
+This is about bundling data (like variables) and the methods (functions) that work on that data into a single unit, usually called a class. It also involves controlling access to that data—think of it like putting a protective shield around it so only certain parts of the program can mess with it. For example, you might hide a variable and only allow changes through a specific method.
+
+**2. Abstraction**
+Hiding implementation details of a class and only showing the essential features to each user.
+i.e. In the given Methods essential features is ``` print() ``` and rest of others are implementation details.
+
+```Python
+def get_average(self):
+    i=0
+    for i in self.marks:
+        i +=i
+    print(f"Average {i/3}")
+
+```
+
