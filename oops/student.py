@@ -1,12 +1,19 @@
-class Student():
-    collage_name = "ABC Collage"
+class Student:
     def __init__(self, name, marks):
+        if not name:
+            raise ValueError("Missing name")
+        if not marks:
+            raise ValueError("Missing marks")
         self.name = name
         self.marks = marks
-        print("adding new student in database...")
+def main():
+    student = get_student()
+    print(f"{student.name} got {student.marks} marks.")
 
-s1 = Student("David", 97)
-print(s1.name, s1.marks)
+def get_student():
+    name = input("Name:")
+    marks = int(input("Marks:"))
+    return Student(name, marks)
 
-s2 = Student("Marquez", 96)
-print(s2.name, s2.marks)
+if __name__ == "__main__":
+    main()
