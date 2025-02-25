@@ -93,7 +93,7 @@ Libraries extend the abilities of Python. Some libraries are included by default
 - **(?:...) non-capturing version**
 
 
-### Object Oriented Programming
+# Object Oriented Programming
 
 ### Class
 Class is a blueprint of template for creating objects. It define the properites(attributes) and methods inside it. Think like Class is the Architectural plan.
@@ -138,7 +138,7 @@ class Student():
     def __init__(self, name):
         self.name = name
 
-    # welcome is the method 
+    # The function Welcome is the method 
     def welcome(self): 
         print(f"Welcome {self.name}")
 s1 = Student("David")
