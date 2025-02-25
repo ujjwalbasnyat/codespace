@@ -145,16 +145,36 @@ s1 = Student("David")
 s1.Welcome()
 ```
 
-## Static Methods
-
 ### Decorator
+A decorator are essentially a function that makes another function(or method) as argument and extends or modifies its behaviour.It is like wrapping a gift - the original function is gift. And the decorator is the wrapping thats adds something extra.
+
+### Decorator in OOPs
+1. Method decorator
+
+```Python
+def log_call(func):
+    def wrapper(self):
+        print(f" Calling {func.__name__}")
+        return func(self)
+    return wrapper
+class Person:
+    def __init__(self,name):
+        self.name = name
+    @log_call
+    def gift(self, name):
+        print(f"Hello, {name} this is Gift")
+
+p1 = Person("David")
+p1.gift()
+```
+ 
 
 # Features of OOPS
 
-**1. Encapsulation**
+## 1. Encapsulation
 This is about bundling data (like variables) and the methods (functions) that work on that data into a single unit, usually called a class. It also involves controlling access to that data—think of it like putting a protective shield around it so only certain parts of the program can mess with it. For example, you might hide a variable and only allow changes through a specific method.
 
-**2. Abstraction**
+## 2. Abstraction
 Hiding implementation details of a class and only showing the essential features to each user.
 i.e. In the given Methods essential features is ``` print() ``` and rest of others are implementation details.
 
