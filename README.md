@@ -1,4 +1,4 @@
-# CS50 Python Practice Repository
+# CS50P
 
 ## Description
 This repository contains my solutions and notes for the CS50 Python course. I am using this space to practice coding, experiment with different approaches, and document my learning journey.
@@ -99,7 +99,7 @@ Libraries extend the abilities of Python. Some libraries are included by default
 Class is a blueprint of template for creating objects. It define the properites(attributes) and methods inside it. Think like Class is the Architectural plan.
 
 ### Instances
-An instance are the specific object created from the class. Think like Object as Proper implementation of the Architectural plan.
+An instance are the specific object created from the class. Think like Object as Proper implementation of the Architectural plan into the real world.
 
 ### constructor
 ```Python
