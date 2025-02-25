@@ -93,3 +93,55 @@ Libraries extend the abilities of Python. Some libraries are included by default
 - **(?:...) non-capturing version**
 
 
+### Object Oriented Programming
+
+### Class
+Class is a blueprint of template for creating objects. It define the properites(attributes) and methods inside it. Think like Class is the Architectural plan.
+
+### Instances
+An instance are the specific object created from the class. Think like Object as Proper implementation of the Architectural plan.
+
+### constructor
+```Python
+# class definition
+class Student():
+    # default constructor
+    collage_name = "ABC Collage"  #class attribute
+    def __init__(self, name, marks):
+        self.name = name #class attribute
+        self.marks = marks #class attribute
+        print("adding new student in database...")
+
+    # paramaterized constructor
+
+# objects/instances
+s1 = Student("David", 97)
+print(s1.name, s1.marks)
+
+s2 = Student("Marquez", 96)
+print(s2.name, s2.marks) 
+```
+
+### Attributes
+attributes are the variables declared into constructor.
+
+### Types of Attrubutes
+- Class Attributes
+- Object Attributes
+
+### Method
+Methods are the function defined inside the class.
+
+```Python
+
+class Student():
+    def __init__(self, name):
+        self.name = name
+
+    # welcome is the method 
+    def welcome(self): 
+        print(f"Welcome {self.name}")
+s1 = Student("David")
+s1.Welcome()
+```
+
