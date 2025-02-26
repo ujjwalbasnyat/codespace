@@ -13,17 +13,7 @@ This repository contains my solutions and notes for the CS50 Python course. I am
 - File I/O
 - Regular Expressions
 - Object Oriented Programming
-- Et Cetera
 
-## Course topic covered
-- Functions, Variables
-- Conditionals
-- Loops
-- Exceptions
-- Libraries
-- Unit tests
-- File I/O
-- Regular Expressions
 
 ## How to Use
 ### Clone the repository for Github Repository
@@ -36,29 +26,14 @@ This repository contains my solutions and notes for the CS50 Python course. I am
 ## Contributing
 Feel free to fork this repository and submit pull requests if you find better solutions or improvements!
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-
-
 # Python Libraries and Packages
 
 Libraries extend the abilities of Python. Some libraries are included by default with Python and simply need to be imported. Others are third-party packages that need to be installed using `pip`. You can also create your own packages for personal use or to share with others!
 
-## Topics Covered
-
-- **Libraries**
-- **Random**
-- **Statistics**
-- **Command-Line Arguments**
-- **Slice**
-- **Packages**
-- **APIs**
-- **Making Your Own Libraries**
-
 # Regular expressions (Regex)
 
 ## Regex Patterns
+
 ### MetaCharacters
 - **.   any character except a new line**
 - **(*)   0 or more repetitions**
@@ -104,15 +79,16 @@ An instance are the specific object created from the class. Think like Object as
 ### constructor
 ```Python
 # class definition
-class Student():
+class Student:
     # default constructor
-    collage_name = "ABC Collage"  #class attribute
+    # Class attribute (shared by all instances)
+    collage_name = "ABC Collage"
     def __init__(self, name, marks):
-        self.name = name #class attribute
-        self.marks = marks #class attribute
+        # Object attributes (unique to each instance)
+        self.name = name
+        self.marks = marks
         print("adding new student in database...")
 
-    # paramaterized constructor
 
 # objects/instances
 s1 = Student("David", 97)
@@ -123,14 +99,39 @@ print(s2.name, s2.marks)
 ```
 
 ### Attributes
-attributes are the variables declared into constructor.
+Attributes are the variables declared into constructor.
 
 ### Types of Attrubutes
-- Class Attributes
-- Object Attributes
+- Class attributes
+- Object attributes
+- Private attributes
+- Public attributes
+
+```Python
+# Private attribute is followed by underscore
+def __init__(self):
+    self._name = name 
+# Public attribute is normal attribute no any underscore
+def __init__(self):
+    self.name = name 
+```
 
 ### Method
 Methods are the function defined inside the class.
+
+### Types of methods
+- Private method
+```Python
+# Same as private attribute, private methods definition is also followed by underscore
+def _home(self):
+    print("this is private method")
+- Public method
+# Public method definition does not follow any underscore
+def _home(self):
+    print("this is public method")
+```
+
+**Method Syntax** 
 
 ```Python
 
@@ -148,7 +149,10 @@ s1.Welcome()
 ### Decorator
 A decorator are essentially a function that makes another function(or method) as argument and extends or modifies its behaviour.It is like wrapping a gift - the original function is gift. And the decorator is the wrapping thats adds something extra.
 
-### Decorator in OOPs
+### Properties with decorators
+Key decorators: `@property`, `@<attribute>.setter`, and `@<attribute>.deleter`.
+
+### Code Example 
 1. Method decorator
 
 ```Python
@@ -187,5 +191,14 @@ def get_average(self):
 
 ```
 ## 3. Inheritance
+Inheritance in the Oops in important concept where the class(a class called subclass or derived class) can inherit the properties and behaviours(attributes and methods) from another class(super-class or base-class).Its like a child inheriting traits from a parent except in programming, it's about resuing of code and establishing relation between classes.
 
+### Types of Inheritance
+- Single inheritance
+- Multi-level inheritance
+- Multiple inheritance
+
+
+## 4. Polymorphism : Operator Overloading
+Polymorphism is a core OOP concept that means "many forms." It’s the ability of different objects to respond to the same action (like a method call or operation) in their own unique way. Think of it like a universal remote: you press "play," and a TV, a DVD player, or a music app all play something—but each does it differently.
 
