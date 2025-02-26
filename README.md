@@ -186,4 +186,6 @@ def get_average(self):
     print(f"Average {i/3}")
 
 ```
+## 3. Inheritance
+
 
