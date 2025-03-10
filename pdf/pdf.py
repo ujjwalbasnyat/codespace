@@ -9,8 +9,9 @@ class PDF(FPDF):
         # printing title
         self.cell(30, 10 , "CS50 Shirtificate", align = "C")
         self.ln(20)
+    
 
 def main():
-    pdf = PDF()
-    pdf.output("header.pdf")
+    pdf = PDF(orientation='P', unit='mm', format='A4')
+    pdf.output("header1.pdf")
 main()

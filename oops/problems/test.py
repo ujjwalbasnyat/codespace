@@ -1,3 +1,11 @@
-from datetime import date
-iso = date.fromisoformat('2019-12-04')
-print(iso)
+class Person:
+    def __init__(self, name="David"):
+        self.name = name
+    
+    @property
+    def capacity(self):
+        print("getting name...")
+        return self.name
+
+person = Person()
+print(person.capacity)
