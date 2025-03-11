@@ -6,7 +6,7 @@ class PDF(FPDF):
         self.set_font("Arial", "B", 16)
         # self.set_text_color(0,0,0)
         self.cell(0,10, "CS50 Shirtificate", ln=1, align='C')
-        self.ln(10)
+        self.ln(20)
 
 def main():
     pdf = PDF()
