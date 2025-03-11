@@ -18,7 +18,7 @@ def main():
     image_y = 50
     img_path = 'shirtificate.png'
     pdf.image(img_path, x = image_x, y= image_y, w=200)
-    pdf.set_font('Arial', size=16 )
+    pdf.set_font('Arial', size=24 )
     pdf.set_text_color(255, 255, 255)
     text_x= image_x + 50
     text_y= image_y + 50
