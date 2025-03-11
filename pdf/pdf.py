@@ -10,7 +10,6 @@ class PDF(FPDF):
         self.cell(30, 10 , "CS50 Shirtificate", align = "C")
         self.ln(20)
     
-
 def main():
     pdf = PDF(orientation='P', unit='mm', format='A4')
     pdf.output("header1.pdf")
