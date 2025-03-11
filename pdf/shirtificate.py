@@ -23,7 +23,7 @@ def main():
     text_x= image_x + 50
     text_y= image_y + 50
     pdf.set_xy(text_x, text_y)
-    pdf.cell(0, 20, txt=text, ln=1, align ='C')
+    pdf.cell(0, 20, txt=text, ln=2, align ='C')
     pdf.output('random.pdf')
 
 main()       
