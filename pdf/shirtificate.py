@@ -2,11 +2,18 @@ from fpdf import FPDF
 
 def main():
     pdf = FPDF()
-    name = input("Enter name: ")
     pdf.add_page()
-    pdf.set_font('arial',size=16 )
-    pdf.text(50, 50, txt=f"{name} took CS50")
-    pdf.image('shirtificate.png', w=20, h=20)
+
+    name = input("Enter name: ")
+    text = name + "took CS50"
+    image_x = 10
+    image_y = 10
+    img_path = 'shirtificate.png'
+    pdf.image(img_path, x = image_x, y= image_y, w=200)
+    pdf.set_font('Arial',size=16 )
+    text_x= image_x + 50
+    text_y= image_y + 50
+    pdf.set_xy(text_x, text_y)
     pdf.output('random.pdf')
 
 main()       
