@@ -1,7 +1,14 @@
 from fpdf import FPDF
 
+
+class PDF(FPDF):
+    def header(self):
+        self.set_font("Arial", "B", 16)
+        self.cell(0,10, "CS50 Shirtificate", ln=1, align='C')
+        self.ln(10)
+
 def main():
-    pdf = FPDF()
+    pdf = PDF()
     pdf.add_page()
 
     name = input("Enter name: ")
@@ -14,7 +21,7 @@ def main():
     text_x= image_x + 50
     text_y= image_y + 50
     pdf.set_xy(text_x, text_y)
-    pdf.cell(0, 10, txt=text, ln=1, align ='L')
+    pdf.cell(0, 10, txt=text, ln=1, align ='C')
     pdf.output('random.pdf')
 
 main()       
